@@ -1,0 +1,295 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+    html{
+    font-size: 62.5%;
+    }
+    /* header */
+    header {
+        height: 50px;
+        width:100%;
+        clear: both;
+    }
+    header li{
+        float:left;
+        margin-right: 8%;
+        font-size: 2rem;
+        list-style-type:none;
+    }
+    .one{
+        height: 350px;
+        width: 100%;
+        background: rgb(241, 243, 245);
+    }
+    .one .logo{
+        height:350px;
+        width: 60%;
+        background: rgb(241, 243, 245);
+        float:left;
+    }
+    .one .lady{
+        width:40%;
+        float:left;
+    }
+    .one img{
+        margin-left: 5%;
+    }
+    .one h1{
+        margin-left: 4%;
+        font-size:3rem;
+    }
+    .one p{
+        margin-left: 4%;
+        padding-right: 20%;
+        font-size:1.5rem;
+    }
+    .one input{
+        padding-right:20%;
+    }
+    .one input {
+        margin-left: 4%;
+    }
+    .two{
+        height: 250px;
+        width: 100%;
+    }
+    .two h2{
+        margin: 3% 10% 0 10%;
+        font-size:2rem;
+        
+    }
+    .twoA{
+        padding-left: 2%;
+        width:50%;
+        font-size: 1.5rem;
+        float:left;
+    }
+    .twoB{
+        padding-right: 2%;
+        width:50%;
+        font-size: 1.5rem;
+        float:left;
+    }
+    .twoC{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .three{
+        height: 600px;
+        width: 100%;
+        background: rgb(241, 243, 245);
+    }
+    .threeA {
+        height: 600px;
+        width:75%;
+        float:left;
+    }
+    .threeB{
+        width:25%;
+        float:left;
+        padding-left:0;
+    }
+    .threeA h3{
+        font-size: 2rem;
+        padding-left:3%;
+    }
+    .threeA p{
+        font-size:1.5rem;
+        padding-left:3%;
+        padding-right: 3%;
+    }
+    .threeB ul{
+        padding-left:0;
+    }
+    .threeB li{
+        list-style-type : none;
+        padding-left:0;
+    }
+    .four {
+        /* height: 400px; */
+        width: 100%;
+        border: 1px solid black;
+        float: left;
+    }
+    .four .who{
+        text-align: center;
+        font-size:2rem;
+    }
+    .founder img{
+        width: 15%;
+        float:left;
+        margin-bottom: 5%;
+    }
+    .founder h4 {
+        font-size:1.5rem;
+        margin-left: 20%;
+    }
+    .founder p{
+        font-size:1.5rem;
+        margin-left: 20%;
+    }    
+    .five section{
+        height:200px;
+        width:50%;
+        float:left;
+    }
+    .five h4 {
+        font-size:2rem;
+        text-align: center;
+    }
+    .five p {
+        font-size:1.5rem;
+        text-align: center;
+    }
+    footer .signUp{
+        height:100px;
+        width:100%;
+        clear:both;
+        background: rgb(241, 243, 245);
+    }
+    .signUp{
+        font-size:2rem;
+        padding-left:5%;
+    }
+    .signUp p {
+        padding-top:2%;
+    }
+    .signUp .button {
+        float:right;
+    }
+    .copyRight li{
+        float:right;
+        margin-right:2%;
+        border-bottom:rgb(241, 243, 245);
+        list-style-type: none;
+    }
+    .copyRight{
+        border-bottom:rgb(241, 243, 245)
+    }
+    footer {
+        height: 250px;
+        width:100%;
+        clear: both;
+        background: rgb(143, 156, 163);
+        color: rgb(211, 202, 202);
+        font-size:1.25rem;
+    }
+    .listOne, .listTwo, .listThree{
+        float:left; 
+    }
+    .listOne li {
+        list-style-type: none;
+    }
+    .listTwo li {
+        list-style-type: none;
+    }
+    .listThree li {
+        list-style-type: none;
+    }
+    .listFour li {
+        float:right;
+        margin-right:2%;
+        margin-top:3%;
+        list-style-type: none;
+    }
+    @media (max-width:1347px){
+        .lady img{
+            display:none;
+        }
+        header button{
+            display:none;
+        }
+        .five section {
+            height:210px;
+        }
+    }
+    @media (max-width:1024px){
+        .threeB {
+            display:none;
+        }
+    }
+    @media (max-width:1000px){
+        .threeB {
+            display:none;
+        }
+        .drop{
+            display:none;
+        }
+        .five{
+            display:none;
+        }
+    }
+    @media (max-width:950px){
+        .two{
+            display:none;
+        }
+        .one p {
+            text-align:center;
+            margin-left:20%;
+        }
+        .one h1{
+            font-size: 2rem;
+            text-align:center;
+        }
+        .one input, button{
+            display:none;
+        }
+        .three{
+            text-align: center;
+        }
+        .threeA p{
+            font-size:1.25rem;
+            margin-left: 3%;
+        }
+        .signUp {
+            display:none;
+        }
+        .five h4 {
+            font-size:1.5rem;
+        }
+        .listThree {
+            display: none;
+        }
+        .listFour {
+            display:none;
+        }
+    }
+    @media (max-width:650px) {
+        .logo img{
+            display:none;
+        }
+    }
+    @media (max-width:600px) {
+        .three h3 {
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width:550px) {
+        .three{
+            height:720px;
+        }
+    }
